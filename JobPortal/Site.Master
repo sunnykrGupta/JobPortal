@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="JobPortal.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Online Job Portal &bull; Find Jobs</title>
+	<!-- META-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Shreya's and Team" />
+	<meta name="description" content="This is a portal for finding jobs related to your skills. Jobs are categorised according to areas of specialisation." />
+	<meta name="keywords" content="Online Jobs, Job portal, Jobs for me , Job notification sites" />
+
+	<!-- css  links -->
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+	<!-- Scripts links-->
+
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Welcome to Online Job Portal
+                </h1>
+            </div>
+            <div class="menu">
+			    <a href="Default.aspx">Home</a>| |
+			    <a href="">New recruiter</a>
+			    <a href="">New user</a>
+		    </div>
+        </div>
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+        </div>
+
+    </div>
+
+   <div class="footer">
+        <div class="clear">
+	    <div id="foot-menu" style="margin-top: 9px">
+			<a href="">Contact Us</a> |
+			<a href="">Terms</a> |
+			<a href="">&copy;2014 Online Portal</a>
+		</div>
+        </div>
+	</div>
+    </form>
+</body>
+</html>
