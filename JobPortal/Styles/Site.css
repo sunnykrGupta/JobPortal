@@ -1,0 +1,185 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    min-width: 900px;
+	font-size: 14px;
+	color: #000;
+	background: #404040;
+    font-weight: 600;
+    margin: 0;
+    min-height: 500px;
+}
+
+a:link, a:visited
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #fff;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    
+    background-color: #fff;
+    border: 1px solid #496077;
+}
+
+.header{
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	padding: 10px;
+	margin-top: 0px;
+	font-size: 100%;
+	background-color: rgba(25, 23, 31, 0.84);
+	width: 100%;
+	color: #fff;
+}
+
+.title
+{
+    float : left;  
+    padding: 10px;
+}
+
+.menu
+{
+    color: #fff;
+    display: inline;
+    margin-left: 25%;
+    width: 400px;
+    font-size: 1.4em;
+    line-height: 3em;
+}
+
+.menu a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.header h1
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    
+    font-size: 2em;
+    height: 40px;
+}
+
+
+
+.main
+{
+    position: relative;
+    padding: 0px 12px;
+    margin-top: 100px;
+    height: 500px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	font-size: 100%;
+	padding: 10px;
+	background-color: rgba(25, 23, 31, 0.84);
+	width: 100%;
+	color: #fff;
+}
+
+#foot-menu{
+
+	display: inline;
+	margin-left: 10%;
+	width: 400px;
+}
+
+#foot-menu a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* -------------- dEFAULT paGE */
+
+.cat { float : left; margin: 20px;}
+
+.cat : hover{ border : 1px solid #000;}

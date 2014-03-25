@@ -1,0 +1,5 @@
+c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\bin\JobPortal.dll
+c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\bin\JobPortal.pdb
+c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\ResolveAssemblyReference.cache
+c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.dll
+c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.pdb
