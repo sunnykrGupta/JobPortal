@@ -72,6 +72,7 @@
     <Content Include="signup_user.aspx" />
     <Content Include="recruiter.aspx" />
     <Content Include="users.aspx" />
+
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
