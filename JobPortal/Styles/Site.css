@@ -180,22 +180,12 @@ first child of the left and right table columns */
 
 /* -------------- dEFAULT paGE  */
 
-.cat {  float : left; margin: 20px;}
+.cat {  float : left; margin: 20px;
+    width: 240px;
+}
 
 .cat : hover{ border : 1px solid #000;}
 
 
-<<<<<<< HEAD
-
-
 
 /* -------- User - signup CSS --- */
-=======
-/* ----- User Page CSS-- */
-
-
-
-
-
-/* ----- Recruiter Page CSS-- */
->>>>>>> work

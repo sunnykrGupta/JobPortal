@@ -2,12 +2,7 @@
     CodeBehind="Default.aspx.cs" Inherits="JobPortal._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-    <style type="text/css">
-        .cat-two
-        {
-            margin-left: 0px;
-        }
-    </style>
+    
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="cat cat-one">
@@ -20,13 +15,11 @@
     </div>
     <div class="cat cat-three">
         <asp:Button ID="Button3" runat="server" Height="90px" Text="MEDICAL" 
-            Width="200px" />
+            Width="200px" onclick="Button3_Click" />
     </div>
     <div class="cat cat-four">
         <asp:Button ID="Button4" runat="server" Height="90px" style="margin-top: 0px" 
-            Text="GOVERNMENT" Width="200px" />
-    </div>
-    <div class="cat cat-five">
+            Text="GOVERNMENT" Width="200px" onclick="Button4_Click" />
     </div>
     
 </asp:Content>
