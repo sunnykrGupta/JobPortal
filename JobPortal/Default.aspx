@@ -16,7 +16,7 @@
     </div>
     <div class="cat cat-two">
         <asp:Button ID="Button2" runat="server" Height="90px" Text="MANAGEMENT" 
-            Width="200px" />      
+            Width="200px" onclick="Button2_Click" />      
     </div>
     <div class="cat cat-three">
         <asp:Button ID="Button3" runat="server" Height="90px" Text="MEDICAL" 

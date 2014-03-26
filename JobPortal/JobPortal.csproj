@@ -68,6 +68,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="signup_recr.aspx" />
+    <Content Include="signup_user.aspx" />
+    <Content Include="recruiter.aspx" />
+    <Content Include="users.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -122,6 +126,34 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="signup_recr.aspx.cs">
+      <DependentUpon>signup_recr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup_recr.aspx.designer.cs">
+      <DependentUpon>signup_recr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup_user.aspx.cs">
+      <DependentUpon>signup_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup_user.aspx.designer.cs">
+      <DependentUpon>signup_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recruiter.aspx.cs">
+      <DependentUpon>recruiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recruiter.aspx.designer.cs">
+      <DependentUpon>recruiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
