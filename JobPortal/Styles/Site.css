@@ -178,8 +178,17 @@ first child of the left and right table columns */
 	color: #fff;
 }
 
-/* -------------- dEFAULT paGE */
+/* -------------- dEFAULT paGE  */
 
-.cat { float : left; margin: 20px;}
+.cat {  float : left; margin: 20px;}
 
 .cat : hover{ border : 1px solid #000;}
+
+
+/* ----- User Page CSS-- */
+
+
+
+
+
+/* ----- Recruiter Page CSS-- */
