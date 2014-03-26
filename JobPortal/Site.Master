@@ -31,7 +31,7 @@
             <div class="menu">
 			    <a href="Default.aspx">Home</a>| |
 
-			    <a href="signup_recr.aspx">New recruiter</a>
+			    <a href="signup_recr.aspx">New recruiter</a> |
 			    <a href="signup_user.aspx">New user</a>
 		    </div>
         </div>
