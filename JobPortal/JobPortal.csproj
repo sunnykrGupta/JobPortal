@@ -55,6 +55,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -72,7 +73,6 @@
     <Content Include="signup_user.aspx" />
     <Content Include="recruiter.aspx" />
     <Content Include="users.aspx" />
-
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">

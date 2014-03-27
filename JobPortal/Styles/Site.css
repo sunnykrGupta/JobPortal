@@ -151,6 +151,7 @@ first child of the left and right table columns */
     padding: 0px 12px;
     margin-top: 100px;
     height: 500px;
+    overflow: hidden;
 }
 
 .footer{
@@ -180,12 +181,43 @@ first child of the left and right table columns */
 
 /* -------------- dEFAULT paGE  */
 
-.cat {  float : left; margin: 20px;
+
+.def-left{ float : left;
+           margin: 0px 10px 0px 50px;
+           
+           }
+
+.cat 
+{
+    margin: 25px;
     width: 240px;
 }
 
-.cat : hover{ border : 1px solid #000;}
+.cat : hover{ border : 2px solid #000;}
 
+.def-right
+{   padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    margin: 20px 30px 0px 400px;
+    border: 2px solid #000;
+    border-radius: 20px; 
+}
 
-
+.cat-result
+{
+    display: none;
+    width: 50%;
+    position: absolute;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 5%;
+    right: 10%;
+    border: 2px solid #000;
+    
+ }
+ 
+ 
 /* -------- User - signup CSS --- */
