@@ -3,3 +3,7 @@ c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\bin\J
 c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\ResolveAssemblyReference.cache
 c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.dll
 c:\users\lautner\documents\visual studio 2010\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.pdb
+C:\project\JobPortal\Jobportal\JobPortal\bin\JobPortal.dll
+C:\project\JobPortal\Jobportal\JobPortal\bin\JobPortal.pdb
+C:\project\JobPortal\Jobportal\JobPortal\obj\Debug\JobPortal.dll
+C:\project\JobPortal\Jobportal\JobPortal\obj\Debug\JobPortal.pdb
