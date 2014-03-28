@@ -26,7 +26,8 @@
     <asp:TextBox ID="TextBox1" runat="server" CssClass="style1" Height="22px" 
         Width="134px"></asp:TextBox>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
-        ControlToValidate="TextBox1" ErrorMessage="Email Id required" ForeColor="Red"></asp:RegularExpressionValidator>
+        ControlToValidate="TextBox1" ErrorMessage="enter a valid id" 
+        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
     <br />
     <br />
     <asp:Label ID="Label2" runat="server" Text="*Password"></asp:Label>
