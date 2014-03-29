@@ -2,29 +2,29 @@
     CodeBehind="Default.aspx.cs" Inherits="JobPortal._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-
+     
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    
-    <div class="def-left">
-        <div class="cat cat-one">
+   
+    <div id="def_left">
+        <div class="cat" id="cat-one">
             <asp:Button ID="Button1" runat="server" Height="90px" Text="ENGINEERING" 
                 Width="200px" onclick="Button1_Click" />
         </div>
-        <div class="cat cat-two">
+        <div class="cat" id="cat-two">
             <asp:Button ID="Button2" runat="server" Height="90px" Text="MANAGEMENT" 
                 Width="200px" onclick="Button2_Click" />      
         </div>
-        <div class="cat cat-three">
+        <div class="cat" id="cat-three">
             <asp:Button ID="Button3" runat="server" Height="90px" Text="MEDICAL" 
                 Width="200px" onclick="Button3_Click" />
         </div>
-        <div class="cat cat-four">
+        <div class="cat" id="cat-four">
             <asp:Button ID="Button4" runat="server" Height="90px" style="margin-top: 0px" 
                 Text="GOVERNMENT" Width="200px" onclick="Button4_Click" />
         </div>
    </div>
-   <div class="def-right">
+   <div id="def_right">
         <p>When fill method was called, dataadapter will open a connection to database,
         executes select command, stores the data retrieved by select command in to
         dataset and immediately closes the connection.</p>
@@ -39,7 +39,7 @@
         not required, this architecture is called disconnected architecture.
         A dataset can contain data in multiple tables.</p>
    </div>
-   <div class="cat-result">
+   <div id="cat_result">
         <p>Here triggered result displays</p>
    </div>
 </asp:Content>

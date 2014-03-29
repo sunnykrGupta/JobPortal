@@ -21,6 +21,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
+<<<<<<< HEAD
 <div class"userbody" style="height: 573px; width: 1252px; margin-right: 0px;">
     
 
@@ -230,4 +231,7 @@
     <br />
     <br />
     </div>
+=======
+
+>>>>>>> upstream/master
 </asp:Content>
