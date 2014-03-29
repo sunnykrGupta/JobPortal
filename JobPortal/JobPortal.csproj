@@ -72,7 +72,7 @@
     <Content Include="signup_recr.aspx" />
     <Content Include="signup_user.aspx" />
     <Content Include="recruiter.aspx" />
-    <Content Include="users.aspx" />
+    <Content Include="user.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -149,12 +149,12 @@
     <Compile Include="recruiter.aspx.designer.cs">
       <DependentUpon>recruiter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="users.aspx.cs">
-      <DependentUpon>users.aspx</DependentUpon>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="users.aspx.designer.cs">
-      <DependentUpon>users.aspx</DependentUpon>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

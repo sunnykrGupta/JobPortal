@@ -88,7 +88,7 @@ first child of the left and right table columns */
 /* PRIMARY LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 
-.page
+.page 
 {
     
     background-color: #fff;
@@ -151,7 +151,7 @@ first child of the left and right table columns */
     padding: 0px 12px;
     margin-top: 100px;
     height: 500px;
-    overflow: hidden;
+   
 }
 
 .footer{
@@ -181,11 +181,27 @@ first child of the left and right table columns */
 
 /* -------------- dEFAULT paGE  */
 
+.def-menu
+{
+    color: #fff;
+    display: inline;
+    margin-left: 25%;
+    width: 400px;
+    font-size: 1.4em;
+    line-height: 3em;
+}
 
-.def-left{ float : left;
+.def-menu a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+#def_left{ float : left;
            margin: 0px 10px 0px 50px;
            
-           }
+}
 
 .cat 
 {
@@ -195,7 +211,7 @@ first child of the left and right table columns */
 
 .cat : hover{ border : 2px solid #000;}
 
-.def-right
+#def_right
 {   padding: 10px;
     font-size: 1.5em;
     font-weight: bold;
@@ -205,7 +221,7 @@ first child of the left and right table columns */
     border-radius: 20px; 
 }
 
-.cat-result
+#cat_result
 {
     display: none;
     width: 50%;
@@ -221,3 +237,40 @@ first child of the left and right table columns */
  
  
 /* -------- User - signup CSS --- */
+
+
+
+/* -------- recr - signup CSS --- */
+
+
+
+
+
+/* ------------- recruiter page CSS ----- */
+
+
+.per-menu
+{
+    color: #fff;
+    display: inline;
+    margin-left: 25%;
+    width: 400px;
+    font-size: 1.4em;
+    line-height: 3em;
+}
+
+.per-menu a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.per-main
+{
+    position: relative;
+    padding: 0px 12px;
+    margin-top: 100px;
+    height: 500px;
+    overflow: hidden;
+}

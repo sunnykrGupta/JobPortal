@@ -11,7 +11,7 @@
 	<meta name="keywords" content="Online Jobs, Job portal, Jobs for me , Job notification sites" />
 
 	<!-- css  links -->
-	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    
         <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
 	<!-- Scripts links-->
     <script type="text/javascript" src="Scripts/jquery-1.4.1.js"></script>

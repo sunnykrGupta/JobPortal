@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    $('.cat').click(function () {
-        $('.cat-result').css('display', 'inline');
-        $('.def-right').fadeOut('fast');
-    }),
+    function ShowHide() {
+        $('.cat').click(function () {
+            $('.cat-result').css('display', 'inline');
+            $('.def-right').fadeOut('fast');
+        })
+        return false;
+    } 
 });
