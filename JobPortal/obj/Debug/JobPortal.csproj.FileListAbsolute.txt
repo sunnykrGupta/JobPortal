@@ -7,3 +7,7 @@ C:\project\JobPortal\Jobportal\JobPortal\bin\JobPortal.dll
 C:\project\JobPortal\Jobportal\JobPortal\bin\JobPortal.pdb
 C:\project\JobPortal\Jobportal\JobPortal\obj\Debug\JobPortal.dll
 C:\project\JobPortal\Jobportal\JobPortal\obj\Debug\JobPortal.pdb
+C:\project\Jobportal\JobPortal\bin\JobPortal.dll
+C:\project\Jobportal\JobPortal\bin\JobPortal.pdb
+C:\project\Jobportal\JobPortal\obj\Debug\JobPortal.dll
+C:\project\Jobportal\JobPortal\obj\Debug\JobPortal.pdb
