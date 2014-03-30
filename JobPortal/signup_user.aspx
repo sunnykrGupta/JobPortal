@@ -17,11 +17,16 @@
             margin-left: 755px;
             margin-top: 91px;
         }
+        #TextArea1
+        {
+            height: 67px;
+            width: 190px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<div class"userbody" style="height: 573px; width: 1252px; margin-right: 0px;">
+<div class"userbody" style="height: 530px; width: 1252px; margin-right: 0px;">
     
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
@@ -112,9 +117,14 @@
         
         
         
-        style="Z-INDEX: 104; LEFT: 223px; POSITION: absolute; TOP: 74px; width: 187px; height: 29px;"></asp:TextBox>
+        
+        style="Z-INDEX: 104; LEFT: 231px; POSITION: absolute; TOP: 74px; width: 187px; height: 29px;"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;
     <asp:FileUpload ID="FileUpload1" runat="server" style="margin-left: 765px" />
     <br />
+    <div style="width: 199px; height: 28px; height: 28px; margin: -16px 10px 0px 10px;font-size: 1.4em;font-weight: bold;color: #5BD32C;">
+        <label>Your Skills :</label>
+    </div>
     <br />
     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
         ControlToValidate="TextBox2" ErrorMessage="this field is required" 
@@ -140,7 +150,7 @@
         
         style="Z-INDEX: 120; LEFT: 13px; POSITION: absolute; TOP: 127px; width: 108px; height: 12px;" 
         Font-Size="Medium">MOBILE* :</asp:Label>
-    <br />
+   
     <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Medium" 
         ForeColor="#00CC00" 
         
@@ -164,7 +174,9 @@
         
         
         
-        style="Z-INDEX: 136; LEFT: 550px; POSITION: absolute; TOP: 353px; width: 171px; margin-bottom: 0px;">Upload your Resume..........</asp:Label>
+        
+        
+        style="Z-INDEX: 136; LEFT: 561px; POSITION: absolute; TOP: 323px; width: 171px; margin-bottom: 0px;">Upload your Resume..........</asp:Label>
     <br />
     <asp:Label ID="Label13" runat="server" Font-Bold="True" Font-Names="Arial Black" 
         ForeColor="#666666" 
@@ -174,8 +186,9 @@
     <br />
     <br />
     <br />
+    
     <asp:TextBox ID="TextBox1" runat="server" MaxLength="250" 
-        style="Z-INDEX: 132; LEFT: 228px; POSITION: absolute; TOP: 324px; height: 27px; width: 189px; margin-top: 0px;" 
+        style="Z-INDEX: 132; LEFT: 228px; POSITION: absolute; TOP: 332px; height: 23px; width: 189px; margin-top: 0px;" 
         BorderColor="White" ForeColor="Black"></asp:TextBox>
     <asp:Button ID="Button3" runat="server" Font-Bold="True" ForeColor="Red" 
         style="Z-INDEX: 117; LEFT: 362px; POSITION: absolute; TOP: 454px" 
