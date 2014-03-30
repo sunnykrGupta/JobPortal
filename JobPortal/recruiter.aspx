@@ -14,13 +14,7 @@
     <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery-1.4.1-vsdoc.js"></script>
     <script type="text/javascript" src="Scripts/main.js"></script>
-    <style type="text/css">
-        .rec-right
-        {
-            width: 250px;
-            height: 334px;
-        }
-    </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,35 +27,55 @@
             </div>
             <div class="per-menu">
 			    <a href="Default.aspx">Home</a> ||
-
                 <asp:Label ID="Label1" runat="server" Text=" Hello "></asp:Label>
-                
 		    </div>
             <asp:Button ID="Button1" runat="server" Text="Log Out" Width="88px" />
         </div>
-        <div class="per-main">
-                    
-            
-            <div class="rec-left" style="height: 335px; width: 812px; float:left;" >
-                
-                <div style="height: 53px; width: 807px;">
 
-                    <asp:Button ID="Button2" runat="server" Text="Your Jobs" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button3" runat="server" Text="Create Job" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="rec-main">
 
+            <div class="rec-left" >
+                <div class="rec-dash" style="height: 53px; width: 400px;">
+                   
+                    <asp:Button ID="Button2" runat="server"
+                        Text="Your Job's" onclick="Button2_Click1"  
+                        Font-Bold="True"  CssClass="yourjob"/>
+
+                    <input id="create_but" type="button" value="Create new Job" />
                 </div>
-                
+                <div id="recjob">
+                    <p>When fill method was called, dataadapter will open a connection to database,
+                        executes select command, stores the data retrieved by select command in to
+                        dataset and immediately closes the connection.</p>
+                        <p>As connection to database was closed, any changes to the data in dataset will
+                        not be directly sent to the database and will be made only in the dataset. To
+                        send changes made to data in dataset to the database, Update() method of
+                        the dataadapter is used that has the following syntax. </p>
+                </div>
+                <div class="createjob">
+                    <p>When fill method was called, dataadapter will open a connection to database,
+                    executes select command, stores the data retrieved by select command in to
+                    dataset and immediately closes the connection.</p>
+                    <p>As connection to database was closed, any changes to the data in dataset will
+                    not be directly sent to the database and will be made only in the dataset. To
+                    send changes made to data in dataset to the database, Update() method of
+                    the dataadapter is used that has the following syntax. </p>
+                </div>
             </div>
 
-            &nbsp;<div class="rec-right">
-
+            <div class="rec-right">
+                <p>When fill method was called, dataadapter will open a connection to database,
+                executes select command, stores the data retrieved by select command in to
+                dataset and immediately closes the connection.</p>
+                <p>As connection to database was closed, any changes to the data in dataset will
+                not be directly sent to the database and will be made only in the dataset. To
+                send changes made to data in dataset to the database, Update() method of
+                the dataadapter is used that has the following syntax. </p>
             </div>
-                    
-            
          </div>
+         
      </div>
+
      <div class="footer">
         <div class="clear">
 	    <div id="foot-menu" style="margin-top: 9px">

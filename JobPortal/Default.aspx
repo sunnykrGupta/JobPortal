@@ -2,25 +2,24 @@
     CodeBehind="Default.aspx.cs" Inherits="JobPortal._Default" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-     
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
    
     <div id="def_left">
-        <div class="cat" id="cat-one">
-            <asp:Button ID="Button1" runat="server" Height="90px" Text="ENGINEERING" 
-                Width="200px" onclick="Button1_Click" />
+        <div class="cat" id="cat_one">
+            <asp:Button ID="Button1" runat="server" class="catbutton" Height="90px" Text="ENGINEERING" 
+                Width="200px" onclick="Button1_Click" c/>
         </div>
-        <div class="cat" id="cat-two">
-            <asp:Button ID="Button2" runat="server" Height="90px" Text="MANAGEMENT" 
+        <div class="cat" id="cat_two">
+            <asp:Button ID="Button2" runat="server" class="catbutton" Height="90px" Text="MANAGEMENT" 
                 Width="200px" onclick="Button2_Click" />      
         </div>
-        <div class="cat" id="cat-three">
-            <asp:Button ID="Button3" runat="server" Height="90px" Text="MEDICAL" 
+        <div class="cat" id="cat_three">
+            <asp:Button ID="Button3" runat="server" class="catbutton" Height="90px" Text="MEDICAL" 
                 Width="200px" onclick="Button3_Click" />
         </div>
-        <div class="cat" id="cat-four">
-            <asp:Button ID="Button4" runat="server" Height="90px" style="margin-top: 0px" 
+        <div class="cat" id="cat_four">
+            <asp:Button ID="Button4" runat="server" class="catbutton" Height="90px" style="margin-top: 0px" 
                 Text="GOVERNMENT" Width="200px" onclick="Button4_Click" />
         </div>
    </div>
