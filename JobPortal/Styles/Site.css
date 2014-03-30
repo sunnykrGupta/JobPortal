@@ -6,7 +6,7 @@ body
     min-width: 900px;
 	font-size: 14px;
 	color: #000;
-	background: #404040;
+	background-color: #fff;
     font-weight: 600;
     margin: 0;
     min-height: 500px;
@@ -95,7 +95,9 @@ first child of the left and right table columns */
     border: 1px solid #496077;
 }
 
-.header{
+.header
+{
+    z-index:100;
 	top: 0px;
 	left: 0px;
 	position: fixed;
@@ -209,7 +211,7 @@ first child of the left and right table columns */
     width: 240px;
 }
 
-.cat : hover{ border : 2px solid #000;}
+.catbutton : hover{ border : 2px solid #000;}
 
 #def_right
 {   padding: 10px;
@@ -244,8 +246,6 @@ first child of the left and right table columns */
 
 
 
-
-
 /* ------------- recruiter page CSS ----- */
 
 
@@ -265,12 +265,95 @@ first child of the left and right table columns */
 	color: #fff;
 }
 
-
-.per-main
+.rec-main
 {
+    padding: 10px;
     position: relative;
-    padding: 0px 12px;
-    margin-top: 100px;
-    height: 500px;
-    overflow: hidden;
+    margin: 100px 0px 100px;
+    height: 590px;
 }
+
+.rec-left{ float: left; }
+
+.rec-dash{
+   margin: 10px 0px 0px 100px;
+   padding: 10px;
+}
+
+
+input[type="button"]:hover{
+    border: 2px solid #000;color:#000;
+    border-radius: 10px;
+}
+
+.yourjob
+{
+    border-radius: 4px;
+    border: solid 2px #000;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.yourjob:hover
+{
+    border: 2px solid #000;color:#000;
+    border-radius: 10px;
+}
+
+#create_but{ margin-left: 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 4px;
+          }
+          
+#recjob   
+{
+    display: block;            
+    font-size: 1.5em;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgba(25, 23, 31, 0.84);
+    border-width: 1px;
+    width: 60%;
+    margin-left: 1em;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+    padding: 20px;
+}
+          
+.createjob 
+{
+    left: 5em;
+    display: none;
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: normal;
+    height: 500px;
+    width: 80%;
+    top: 5em;
+    padding: 1em;
+    border-style: solid;
+    border-color: rgba(25, 23, 31, 0.84);
+    border-width: 1px;
+
+}
+
+.rec-right
+{
+    position: absolute;
+    top: 4.4em;
+    right: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0.5em;
+    border-style: solid;
+    border-width: 2px;
+    width: 30%;
+    padding: 10px;
+ 
+ }
+
+
+
