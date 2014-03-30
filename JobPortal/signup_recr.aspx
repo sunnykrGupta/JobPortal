@@ -55,8 +55,6 @@
     <asp:Label ID="Label11" runat="server" CssClass="style3" ForeColor="#999999" 
         Text="New Client Registeration"></asp:Label>
     <br />
-    <br />
-    <br />
     <b>
     <br />
     </b>
@@ -65,12 +63,16 @@
     <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </b>
     <asp:TextBox ID="TextBox1" runat="server" CssClass="style10" Height="22px" 
-        Width="128px"></asp:TextBox>
+        Width="175px"></asp:TextBox>
     <b>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
         ControlToValidate="TextBox1" ErrorMessage="enter a valid id" 
         ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
         ForeColor="Red"></asp:RegularExpressionValidator>
+    <br />
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+        ControlToValidate="TextBox1" ErrorMessage="RequiredFieldValidator" 
+        ForeColor="Red">this field is required</asp:RequiredFieldValidator>
     <br />
     <br />
     <asp:Label ID="Label2" runat="server" Text="*Password" CssClass="style5" 
@@ -78,13 +80,18 @@
     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </b>
     <input id="Password1" type="password" class="style10" 
-        onclick="return Password1_onclick()" align="top" maxlength="128" /><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        onclick="return Password1_onclick()" align="top" maxlength="128" /><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
     <br />
     <asp:Label ID="Label3" runat="server" Text="*Company name" CssClass="style6" 
         Font-Bold="True" ForeColor="#00CC00"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><asp:TextBox ID="TextBox2" runat="server" CssClass="style10" 
-        Height="22px" Width="128px"></asp:TextBox>
+        Height="22px" Width="175px"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+        ControlToValidate="TextBox2" Display="Dynamic" 
+        ErrorMessage="RequiredFieldValidator" ForeColor="Red">this field is required</asp:RequiredFieldValidator>
     <b>
+    <br />
     <br />
     <br />
     <asp:Label ID="Label4" runat="server" Text="*Industry type " CssClass="style7" 
@@ -92,7 +99,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </b>
     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="style10" 
-        Width="159px">
+        Width="175px" Height="22px">
         <asp:ListItem>-Select an industry-</asp:ListItem>
         <asp:ListItem>accounting/taxation</asp:ListItem>
         <asp:ListItem>banking/financial services/broking</asp:ListItem>
@@ -106,21 +113,27 @@
     <b>
     <br />
     <br />
-    <asp:Label ID="Label5" runat="server" Text="*Address" CssClass="style8" 
+    <br />
+    <asp:Label ID="Label5" runat="server" Text="Address" CssClass="style8" 
         Font-Bold="True" ForeColor="#00CC00"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b><asp:TextBox 
         ID="TextBox3" runat="server" CssClass="style2" 
-        ontextchanged="TextBox3_TextChanged" Width="128px" Height="22px"></asp:TextBox>
-    <b>&nbsp;
+        ontextchanged="TextBox3_TextChanged" Width="277px" Height="22px"></asp:TextBox>
+    <b>&nbsp;&nbsp;
+    <br />
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
     <asp:Label ID="Label10" runat="server" Text="*contact no." CssClass="style9" 
         Font-Bold="True" ForeColor="#00CC00"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </b>
     <asp:TextBox ID="TextBox7" runat="server" CssClass="style2" 
-        ontextchanged="TextBox3_TextChanged" Width="128px" Height="22px"></asp:TextBox>
+        ontextchanged="TextBox3_TextChanged" Width="175px" Height="22px"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+        ControlToValidate="TextBox7" ErrorMessage="RequiredFieldValidator" 
+        ForeColor="Red">this field is required</asp:RequiredFieldValidator>
     <b>
+    <br />
     <br />
     </b>
     <br />
