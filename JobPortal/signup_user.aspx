@@ -219,18 +219,5 @@
     <asp:Button ID="Button3" runat="server" Font-Bold="True" ForeColor="Red" 
         style="Z-INDEX: 117; LEFT: 328px; POSITION: absolute; TOP: 544px" 
         Text="RIGSTER" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    </div>
-=======
 
->>>>>>> upstream/master
 </asp:Content>
