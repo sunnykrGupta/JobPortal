@@ -11,7 +11,6 @@ namespace JobPortal {
     
     
     public partial class WebForm2 {
-<<<<<<< HEAD
         
         /// <summary>
         /// Label17 control.
@@ -300,7 +299,5 @@ namespace JobPortal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
-=======
->>>>>>> upstream/master
     }
 }
