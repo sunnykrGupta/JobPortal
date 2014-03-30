@@ -69,8 +69,7 @@
     <input id="Password1" type="password" /><br />
     <br />
     <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;<br />
+    <br />
     <asp:Label ID="Label19" runat="server" Font-Bold="True" Font-Names="Arial" 
         Font-Size="Medium" ForeColor="#00CC00" Text="CATEGORY *:"></asp:Label>
     <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" 
@@ -125,9 +124,6 @@
         
         
         style="Z-INDEX: 105; LEFT: 13px; POSITION: absolute; TOP: 95px; height: 18px; margin-top: 0px;"></asp:RequiredFieldValidator>
-    <asp:Button ID="Button4" runat="server" Font-Bold="True" 
-        Font-Names="Arial Black" Height="30px" 
-        style="margin-left: 423px; margin-top: 9px" Text="SUBMIT" Width="113px" />
     <br />
     <asp:TextBox ID="TextBox9" runat="server" BorderColor="#CCCCCC" 
         ForeColor="Black" MaxLength="10" 
@@ -178,46 +174,11 @@
     <br />
     <br />
     <br />
-    <asp:Label ID="Label7" runat="server" Font-Bold="True" ForeColor="#00CC00" 
-        
-        
-        
-        
-        
-        
-        
-        style="Z-INDEX: 124; LEFT: 14px; POSITION: absolute; TOP: 320px; right: 1069px; width: 193px; height: 18px;" 
-        Font-Size="Medium">What Are Your Key Skils?*:</asp:Label>
-    <br />
-    <br />
-    <br />
-    <asp:Label ID="Label18" runat="server" Font-Bold="True" ForeColor="Green" 
-        style="Z-INDEX: 119; LEFT: 0px; POSITION: absolute; TOP: 496px">What Are Your Key Skills?</asp:Label>
     <asp:TextBox ID="TextBox1" runat="server" MaxLength="250" 
-        
-        
-        
-        
         style="Z-INDEX: 132; LEFT: 228px; POSITION: absolute; TOP: 324px; height: 27px; width: 189px; margin-top: 0px;" 
         BorderColor="White" ForeColor="Black"></asp:TextBox>
-    <br />
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" 
-        ControlToValidate="TextBox1" ErrorMessage="this field is required" 
-        ForeColor="Red" 
-        
-        
-        
-        
-        
-        style="Z-INDEX: 126; LEFT: 13px; POSITION: absolute; TOP: 344px; height: 19px; width: 133px; margin-bottom: 7px;"></asp:RequiredFieldValidator>
-    &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Font-Bold="True" 
-        ForeColor="Red" 
-        style="Z-INDEX: 117; LEFT: 328px; POSITION: absolute; TOP: 544px" 
-        Text="RIGSTER" />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
     <asp:Button ID="Button3" runat="server" Font-Bold="True" ForeColor="Red" 
-        style="Z-INDEX: 117; LEFT: 328px; POSITION: absolute; TOP: 544px" 
-        Text="RIGSTER" />
+        style="Z-INDEX: 117; LEFT: 362px; POSITION: absolute; TOP: 454px" 
+        Text="REGISTER" />
 
 </asp:Content>
