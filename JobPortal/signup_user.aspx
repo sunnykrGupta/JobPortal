@@ -187,11 +187,11 @@
     <br />
     <br />
     
-    <asp:TextBox ID="TextBox1" runat="server" MaxLength="250" 
-        style="Z-INDEX: 132; LEFT: 228px; POSITION: absolute; TOP: 332px; height: 23px; width: 189px; margin-top: 0px;" 
-        BorderColor="White" ForeColor="Black"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server" TextMode="multiline" Columns="10" Rows="10"
+        style="Z-INDEX: 132; LEFT: 216px; POSITION: absolute; TOP: 332px; height: 64px; width: 199px; margin-top: 0px;" 
+        BorderColor="Black" ForeColor="Black"></asp:TextBox>
     <asp:Button ID="Button3" runat="server" Font-Bold="True" ForeColor="Red" 
         style="Z-INDEX: 117; LEFT: 362px; POSITION: absolute; TOP: 454px" 
-        Text="REGISTER" />
+        Text="REGISTER" onclick="Button3_Click" />
 
 </asp:Content>

@@ -24,5 +24,15 @@ namespace JobPortal
         {
 
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

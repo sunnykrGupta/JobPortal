@@ -33,7 +33,7 @@
         </div>
 
         <div class="rec-main">
-
+           
             <div class="rec-left" >
                 <div class="rec-dash" style="height: 53px; width: 400px;">
                    
@@ -53,13 +53,69 @@
                         the dataadapter is used that has the following syntax. </p>
                 </div>
                 <div class="createjob">
-                    <p>When fill method was called, dataadapter will open a connection to database,
-                    executes select command, stores the data retrieved by select command in to
-                    dataset and immediately closes the connection.</p>
-                    <p>As connection to database was closed, any other changes to the data in dataset will
-                    not be directly sent to the database and will be made only in the dataset. To
-                    send changes made to data in dataset to the database, Update() method of
-                    the dataadapter is used that has the following syntax. </p>
+                    
+                    <label>Job Title</label>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="509px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <br />
+                    <br />
+                     <label>Job Category</label>
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>Engineering</asp:ListItem>
+                        <asp:ListItem>Medical</asp:ListItem>
+                        <asp:ListItem>Management</asp:ListItem>
+                        <asp:ListItem>Government</asp:ListItem>
+                    </asp:DropDownList>
+                    
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>Area of Specialization</label>
+                    <asp:DropDownList ID="DropDownList2" runat="server">
+                        <asp:ListItem>Anyone</asp:ListItem>
+                        <asp:ListItem>Civil Engineer</asp:ListItem>
+                        <asp:ListItem>Computer Science</asp:ListItem>
+                        <asp:ListItem>Electrical Engineer</asp:ListItem>
+                        <asp:ListItem>Mechanical Engineer</asp:ListItem>
+                        <asp:ListItem>Health</asp:ListItem>
+                         <asp:ListItem>Finance</asp:ListItem>
+                        <asp:ListItem>Business</asp:ListItem>
+                        <asp:ListItem>Marketing</asp:ListItem>
+                        <asp:ListItem>Real estate</asp:ListItem>
+                        <asp:ListItem>Risk management</asp:ListItem>
+                         <asp:ListItem>Accountant</asp:ListItem>
+                         <asp:ListItem>Professor</asp:ListItem>
+                        <asp:ListItem>Data Entry</asp:ListItem>
+                        <asp:ListItem>Teacher</asp:ListItem>
+                        <asp:ListItem>Librarian</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Vacancies</label>
+                    <asp:TextBox ID="TextBox2" runat="server" Width="44px"></asp:TextBox>
+                    <br />
+                    <br />
+                    
+                    <br />
+                    <div id="desc"> 
+                        <label>Job Description</label>
+                    </div>
+                    <asp:TextBox ID="TextBox3" runat="server" TextMode="multiline" Height="85px" Width="579px"></asp:TextBox>
+
+                    <div id="joburl">
+                        <label>Website</label>
+                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div id="needs">
+                        <label>Who can Apply</label>
+                    </div>
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="multiline" Height="85px" Width="579px"></asp:TextBox>
+                    
+                
+                    <div id="finish_job">
+                        <asp:Button ID="Button3" runat="server" CssClass="finish" Text="Finish" Height="32px" 
+                        Width="83px" />
+                    </div>
                 </div>
             </div>
 
@@ -78,11 +134,11 @@
 
      <div class="footer">
         <div class="clear">
-	    <div id="foot-menu" style="margin-top: 9px">
-			<a href="">Contact Us |
-			<a href="">Terms</a> |
-			<a href="">&copy;2014 Online Portal</a>
-		</div>
+	        <div id="foot-menu" style="margin-top: 9px">
+			    <a href="">Contact Us |
+			    <a href="">Terms</a> |
+			    <a href="">&copy;2014 Online Portal</a>
+		    </div>
         </div>
 	</div>
     
