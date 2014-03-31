@@ -116,9 +116,10 @@
     <br />
     <asp:Label ID="Label5" runat="server" Text="Address" CssClass="style8" 
         Font-Bold="True" ForeColor="#00CC00"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b><asp:TextBox 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</b>
+    <asp:TextBox 
         ID="TextBox3" runat="server" CssClass="style2" 
-        ontextchanged="TextBox3_TextChanged" Width="277px" Height="22px"></asp:TextBox>
+        ontextchanged="TextBox3_TextChanged" Width="277px" TextMode="multiline"  Height="22px"></asp:TextBox>
     <b>&nbsp;&nbsp;
     <br />
     <br />
