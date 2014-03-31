@@ -3,13 +3,10 @@ $(document).ready(function () {
         $('.createjob').css('display', 'inline');
         $('#recjob').hide();
         $('.rec-right').hide();
+    }),
+    $('#edituser').click(function () {
+        $('.editprofile').css('display', 'inline');
+        $('#hotjobs').hide();
     });
-
-    /* function ShowHide() {
-    $('.cat').click(function () {
-    $('.cat-result').css('display', 'inline');
-    $('.def-right').fadeOut('fast');
-    })
-    return false;
-    } */
+    
 });

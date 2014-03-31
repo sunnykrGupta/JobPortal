@@ -27,9 +27,10 @@
             </div>
             <div class="per-menu">
 			    <a href="Default.aspx">Home</a> ||
-                <asp:Label ID="Label1" runat="server" Text=" Hello "></asp:Label>
+                <label>Hello , </label>
+                <asp:Label ID="Label1" runat="server" Text="profile_name"></asp:Label>
 		    </div>
-            <asp:Button ID="Button1" runat="server" Text="Log Out" Width="88px" />
+            <asp:Button ID="Button1" runat="server" CssClass="logout" Text="Log Out" Width="88px" />
         </div>
 
         <div class="rec-main">

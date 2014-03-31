@@ -92,7 +92,7 @@ first child of the left and right table columns */
 {
     
     background-color: #fff;
-    border: 1px solid #496077;
+    
 }
 
 .header
@@ -254,6 +254,79 @@ first child of the left and right table columns */
 
 
 
+/* ------------- user page CSS ----- */
+.logout
+{
+    border-radius: 4px;
+    border: solid 2px #000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logout:hover
+{
+    border: 2px solid #000;color:#000;
+    border-radius: 10px;
+}
+
+
+.editprofile
+{
+    display : none;
+    position: absolute;
+    border : 1px solid #000;
+    top: 100px;
+    left: 70px;
+    height: 294px;
+    width: 744px;
+}
+
+#hotjobs
+{
+     display: block;
+    margin-left: 80px;
+    padding: 10px 20px 10px 20px;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    border: 1px solid #000;
+    font-size: 1.4em;
+ }
+
+.userinfo
+{
+    width: 30%;
+    position: absolute;
+    top: 5em;
+    right: 3em;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 1.3em;
+
+}
+
+.update
+{
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+    }
+    
+.update_but
+{
+    border-radius: 4px;
+    border: solid 2px #000;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+
+.update_but:hover
+{
+    border: 2px solid #000;color:#000;
+    border-radius: 10px;
+}
+
 /* ------------- recruiter page CSS ----- */
 
 
@@ -278,7 +351,7 @@ first child of the left and right table columns */
     padding: 10px;
     position: relative;
     margin: 100px 0px 100px;
-    height: 590px;
+    height: auto;
 }
 
 .rec-left{ float: left; }
@@ -294,7 +367,7 @@ input[type="button"]:hover{
     border-radius: 10px;
 }
 
-.yourjob
+.yourjob, .jobuser
 {
     border-radius: 4px;
     border: solid 2px #000;
@@ -303,7 +376,7 @@ input[type="button"]:hover{
 
 }
 
-.yourjob:hover
+.yourjob:hover , .jobuser:hover
 {
     border: 2px solid #000;color:#000;
     border-radius: 10px;
@@ -333,7 +406,7 @@ input[type="button"]:hover{
 
 
 
-#create_but{ margin-left: 40px;
+#create_but , #edituser{ margin-left: 40px;
             font-size: 1.5em;
             font-weight: bold;
             border-radius: 4px;
