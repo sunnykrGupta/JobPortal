@@ -131,6 +131,11 @@ first child of the left and right table columns */
 	color: #fff;
 }
 
+.menu a:hover , .per-menu a:hover{
+   color: #B4CDCE;
+   font-size: 1.1em;
+}
+
 .header h1
 {
     border-style: none;
@@ -189,7 +194,43 @@ first child of the left and right table columns */
 	color: #fff;
 }
 
+
+
 /* -------------- dEFAULT paGE  */
+
+.login
+{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 300px;
+    height: 150px;
+    left: 25em;
+    top: 4em;
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#Login1_LoginButton {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: normal;
+    border-style: solid;
+    border-color: #141214;
+    border-width: 2px;
+    border-radius : 4px;
+}
+
+#Login1_LoginButton:hover {
+    border-radius : 6px;
+}
+
+
+p.submitButton {
+    margin-left: 30em;
+    margin-top: 15em;
+}
 
 .def-menu
 {
@@ -244,6 +285,18 @@ first child of the left and right table columns */
     border: 2px solid #000;
     
  }
+ 
+ /*--------------- login CSS ------- */
+ 
+ .logpage
+ {
+    float: left;
+    background : #000;
+    height: 550px;
+    width: 100px;
+  }
+ 
+ 
  
  
 /* -------- User - signup CSS --- */

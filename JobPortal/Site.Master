@@ -13,6 +13,8 @@
 	<!-- css  links -->
 	    
         <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Styles/logmain.css" rel="stylesheet" type="text/css" />
+
 	<!-- Scripts links-->
     <script type="text/javascript" src="Scripts/jquery-1.4.1.js"></script>
     <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
@@ -31,11 +33,13 @@
                     Welcome to Online Job Portal
                 </h1>
             </div>
+            
             <div class="menu">
 			    <a href="Default.aspx">Home</a>| |
 
 			    <a href="signup_recr.aspx">New recruiter</a> |
-			    <a href="signup_user.aspx">New user</a>
+			    <a href="signup_user.aspx">New user</a> |
+                <a href="loginpage.aspx">Login</a>
 		    </div>
         </div>
 
