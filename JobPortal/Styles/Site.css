@@ -302,10 +302,42 @@ p.submitButton {
 /* -------- User - signup CSS --- */
 
 
+.signhead 
+{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    position:absolute;
+    top: -50px;
+    left: 10em;
+}
+
+.personal
+{
+    padding: 20px;
+    border : 1px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 1.3em;
+    top: 2em;
+    left: 15em;
+    width: 900px;
+}
+
+
 
 /* -------- recr - signup CSS --- */
 
-
+.recrsign
+{   border: 1px solid #000;
+    border-radius: 8px;
+    line-height: .8em;
+    font-size: 1.3em;
+    position: relative;
+    margin-left: 30em;
+    width: 700px;
+    padding: 5px 0px 0px 40px;
+}
 
 /* ------------- user page CSS ----- */
 .logout

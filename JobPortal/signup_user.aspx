@@ -1,197 +1,90 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="signup_user.aspx.cs" Inherits="JobPortal.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <script language="javascript" type="text/javascript">
-// <![CDATA[
-
-        function Text1_onclick() {
-
-        }
-
-// ]]>
-    </script>
-    <style type="text/css">
-        #Password1
-        {
-            width: 189px;
-            height: 28px;
-            margin-left: 755px;
-            margin-top: 91px;
-        }
-        #TextArea1
-        {
-            height: 67px;
-            width: 190px;
-        }
-    </style>
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
-<div class"userbody" style="height: 530px; width: 1252px; margin-right: 0px;">
+    <div class="signhead">
+        <h2>User Registration Form</h2>
     
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label17" runat="server" Font-Bold="True" 
-        Font-Names="Arial Black" Font-Size="X-Large" ForeColor="#666666" 
-        
-        
-        style="Z-INDEX: 138; LEFT: 403px; POSITION: absolute; TOP: 1px; height: 36px; width: 419px; margin-top: 0px;">                Employee Registration Form</asp:Label>
-    <br />
-    <br />
-    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Names="Arial Black" 
-        Font-Size="Medium" Font-Underline="True" ForeColor="Gray" 
-        
-        
-        
-        
-        
-        style="Z-INDEX: 106; LEFT: 14px; POSITION: absolute; TOP: 33px; width: 215px; right: 1047px; height: 23px;">PERSONAL DETAILS</asp:Label>
-    <br />
-    <br />
-    <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="#00CC00" 
-        
-        
-        
-        style="Z-INDEX: 107; LEFT: 559px; POSITION: absolute; TOP: 74px; height: 18px; width: 102px;" 
-        Font-Size="Medium">EAMIL-ID *:</asp:Label>
-    <asp:TextBox ID="TextBox3" runat="server" BorderColor="White" 
-        
-        
-        
-        
-        style="Z-INDEX: 110; LEFT: 765px; POSITION: absolute; TOP: 67px; width: 186px; height: 27px;" 
-        ForeColor="Black" ontextchanged="TextBox3_TextChanged"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-        ControlToValidate="TextBox3" ErrorMessage="this field is required" 
-        Font-Bold="True" Font-Italic="False" ForeColor="Red" 
-        style="Z-INDEX: 111; LEFT: 968px; POSITION: absolute; TOP: 72px"></asp:RequiredFieldValidator>
-    <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#00CC00" 
-        
-        
-        style="Z-INDEX: 101; LEFT: 551px; POSITION: absolute; TOP: 190px; right: 539px; height: 18px; width: 186px;" 
-        Font-Size="Medium">CONFIRM PASSWORD*:</asp:Label>
-    <br />
-    <input id="Password1" type="password" /><br />
-    <br />
-    <br />
-    <br />
-    <asp:Label ID="Label19" runat="server" Font-Bold="True" Font-Names="Arial" 
-        Font-Size="Medium" ForeColor="#00CC00" Text="CATEGORY *:"></asp:Label>
-    <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" 
-        style="margin-left: 110px" Width="192px">
-        <asp:ListItem>SELECT</asp:ListItem>
-        <asp:ListItem>ENGINEERING</asp:ListItem>
-        <asp:ListItem>MANAGEMENT</asp:ListItem>
-        <asp:ListItem>MEDICAL</asp:ListItem>
-        <asp:ListItem>GOVERNMENT</asp:ListItem>
-    </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label20" runat="server" Font-Bold="True" Font-Names="Arial" 
-        Font-Size="Medium" ForeColor="#00CC00" Text="SPECALISATION *:"></asp:Label>
-    <asp:DropDownList ID="DropDownList2" runat="server" 
-        style="Z-INDEX: 127; LEFT: 774px; POSITION: absolute; TOP: 268px; height: 29px; width: 176px;">
-    </asp:DropDownList>
-    <br />
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" 
-        ControlToValidate="DropDownList1" ErrorMessage="this field is required" 
-        ForeColor="Red"></asp:RequiredFieldValidator>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
-        ControlToValidate="DropDownList2" Display="Dynamic" 
-        ErrorMessage="this field is required" ForeColor="Red"></asp:RegularExpressionValidator>
-    <br />
-    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Medium" 
-        ForeColor="#00CC00" 
-        style="Z-INDEX: 103; LEFT: 12px; POSITION: absolute; TOP: 76px" 
-        Width="81px">NAME *:</asp:Label>
-    <input size="20" 
-        style="Z-INDEX: 112; LEFT: 767px; WIDTH: 184px; POSITION: absolute; TOP: 127px; HEIGHT: 27px" 
-        tabindex="0" type="password" maxlength="10" /><br />
-    <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="Medium" 
-        ForeColor="#00CC00" 
-        
-        
-        
-        style="Z-INDEX: 108; LEFT: 554px; POSITION: absolute; TOP: 132px; height: 23px;">PASSWORD *:</asp:Label>
-    <asp:TextBox ID="TextBox2" runat="server" BorderColor="White" ForeColor="Black" 
-        
-        
-        
-        
-        style="Z-INDEX: 104; LEFT: 231px; POSITION: absolute; TOP: 74px; width: 187px; height: 29px;"></asp:TextBox>
-    &nbsp;&nbsp;&nbsp;
-    <asp:FileUpload ID="FileUpload1" runat="server" style="margin-left: 765px" />
-    <br />
-    <div style="width: 199px; height: 28px; height: 28px; margin: -16px 10px 0px 10px;font-size: 1.4em;font-weight: bold;color: #5BD32C;">
-        <label>Your Skills :</label>
     </div>
-    <br />
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-        ControlToValidate="TextBox2" ErrorMessage="this field is required" 
-        ForeColor="Red" 
+    <div class="personal">
+        <h3 style="text-decoration: underline;">PERSONAL DETAILS</h3>
+        </br>
+        <label>EAMIL-ID *:&nbsp;&nbsp;&nbsp;&nbsp;</Label>
+        <asp:TextBox ID="TextBox2" runat="server" Width="174px"></asp:TextBox>
+        <label>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NAME *:</Label>
+        <asp:TextBox ID="TextBox1" runat="server" Width="230px"></asp:TextBox>
+       </br></br>
+        
+        <label>PASSWORD *:</Label>
+        <asp:TextBox ID="TextBox3" runat="server" Width="179px" TextMode="Password"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>REPEAT PASS *:</Label>
+        <asp:TextBox ID="TextBox4" runat="server" Width="160px" TextMode="Password"></asp:TextBox>
+        </br></br>
+
+        <label>CONTACT *:</Label>
+        <asp:TextBox ID="TextBox5" runat="server" style="margin-left: 16px" 
+            Width="174px"></asp:TextBox>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>CITY *:</Label>
+        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+       </br>
+        &nbsp;<h3 style="text-decoration: underline;">EDUCATIONAL DETAILS </h3>
+       </br>
+          <label>CATEGORY *:</Label>
+         <asp:DropDownList ID="DropDownList2" runat="server">
+            
+            <asp:ListItem>ENGINEERING</asp:ListItem>
+            <asp:ListItem>MANAGEMENT</asp:ListItem>
+            <asp:ListItem>MEDICAL</asp:ListItem>
+            <asp:ListItem>GOVERNMENT</asp:ListItem>
+        </asp:DropDownList>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>SPECIALIZATION *:</Label>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+           
+                        <asp:ListItem>Civil Engineer</asp:ListItem>
+                        <asp:ListItem>Computer Science</asp:ListItem>
+                        <asp:ListItem>Electrical Engineer</asp:ListItem>
+                        <asp:ListItem>Mechanical Engineer</asp:ListItem>
+                        <asp:ListItem>Health</asp:ListItem>
+                         <asp:ListItem>Finance</asp:ListItem>
+                        <asp:ListItem>Business</asp:ListItem>
+                        <asp:ListItem>Marketing</asp:ListItem>
+                        <asp:ListItem>Real estate</asp:ListItem>
+                        <asp:ListItem>Risk management</asp:ListItem>
+                         <asp:ListItem>Accountant</asp:ListItem>
+                         <asp:ListItem>Professor</asp:ListItem>
+                        <asp:ListItem>Data Entry</asp:ListItem>
+                        <asp:ListItem>Teacher</asp:ListItem>
+                        <asp:ListItem>Librarian</asp:ListItem>
+        </asp:DropDownList>
+        </br>
+        <div style="margin-top:20px; width: 300px; ">  
+          <label>SKILLS *:</Label>
+        </div>
+          <asp:TextBox ID="TextBox7" Textmode="Multiline" runat="server" Height="61px" 
+            Width="252px"></asp:TextBox>
+        
+        <div style="float:right; position: absolute; bottom: 3em; right: 9em; ">
+
+       <label>UPLOAD RESUME/CV *:</Label>
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+        </div>
         
         
+        <div style="position: absolute; bottom: 1.3em;right: 3em; ">
         
-        
-        style="Z-INDEX: 105; LEFT: 13px; POSITION: absolute; TOP: 95px; height: 18px; margin-top: 0px;"></asp:RequiredFieldValidator>
-    <br />
-    <asp:TextBox ID="TextBox9" runat="server" BorderColor="#CCCCCC" 
-        ForeColor="Black" MaxLength="10" 
-        
-        
-        style="Z-INDEX: 121; LEFT: 224px; POSITION: absolute; TOP: 127px; height: 30px; width: 188px; bottom: 343px;"></asp:TextBox>
-    <asp:TextBox ID="TextBox4" runat="server" BorderColor="White" ForeColor="Black" 
-        
-        
-        
-        style="Z-INDEX: 113; LEFT: 224px; POSITION: absolute; TOP: 182px; height: 30px; width: 188px;"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label12" runat="server" Font-Bold="True" ForeColor="#00CC00" 
-        
-        style="Z-INDEX: 120; LEFT: 13px; POSITION: absolute; TOP: 127px; width: 108px; height: 12px;" 
-        Font-Size="Medium">MOBILE* :</asp:Label>
-   
-    <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Medium" 
-        ForeColor="#00CC00" 
-        
-        
-        
-        
-        style="Z-INDEX: 109; LEFT: 10px; POSITION: absolute; TOP: 160px; width: 120px; margin-top: 23px; bottom: 298px;">CURRENT CITY</asp:Label>
-    <br />
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
-        ControlToValidate="TextBox4" ErrorMessage="this field is required" 
-        
-        style="Z-INDEX: 114; LEFT: 13px; POSITION: absolute; TOP: 206px; right: 1119px; height: 14px; width: 144px;" 
-        ForeColor="Red"></asp:RequiredFieldValidator>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" 
-        ControlToValidate="TextBox9" ErrorMessage="this field is required" 
-        style="Z-INDEX: 122; LEFT: 11px; POSITION: absolute; TOP: 149px" 
-        ForeColor="Red"></asp:RequiredFieldValidator>
-    <br />
-    <asp:Label ID="Label15" runat="server" Font-Bold="True" ForeColor="Crimson" 
-        
-        
-        
-        
-        
-        
-        style="Z-INDEX: 136; LEFT: 561px; POSITION: absolute; TOP: 323px; width: 171px; margin-bottom: 0px;">Upload your Resume..........</asp:Label>
-    <br />
-    <asp:Label ID="Label13" runat="server" Font-Bold="True" Font-Names="Arial Black" 
-        ForeColor="#666666" 
-        
-        style="Z-INDEX: 123; LEFT: 6px; POSITION: absolute; TOP: 233px; right: 1000px; width: 270px;" 
-        Font-Size="Medium" Font-Underline="True">EDUCATIONAL DETAILS</asp:Label>
-    <br />
-    <br />
-    <br />
+            <asp:Button ID="Button1" runat="server" Text="Register" CssClass="logout"/>
     
-    <asp:TextBox ID="TextBox1" runat="server" TextMode="multiline" Columns="10" Rows="10"
-        style="Z-INDEX: 132; LEFT: 216px; POSITION: absolute; TOP: 332px; height: 64px; width: 199px; margin-top: 0px;" 
-        BorderColor="Black" ForeColor="Black"></asp:TextBox>
-    <asp:Button ID="Button3" runat="server" Font-Bold="True" ForeColor="Red" 
-        style="Z-INDEX: 117; LEFT: 362px; POSITION: absolute; TOP: 454px" 
-        Text="REGISTER" onclick="Button3_Click" />
+        </div>   
+        </br>
+    </div>
+    
+
 
 </asp:Content>
