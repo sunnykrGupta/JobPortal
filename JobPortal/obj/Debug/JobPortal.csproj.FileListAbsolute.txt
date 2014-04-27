@@ -11,3 +11,9 @@ C:\project\Jobportal\JobPortal\bin\JobPortal.dll
 C:\project\Jobportal\JobPortal\bin\JobPortal.pdb
 C:\project\Jobportal\JobPortal\obj\Debug\JobPortal.dll
 C:\project\Jobportal\JobPortal\obj\Debug\JobPortal.pdb
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.dll.config
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.dll
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.pdb
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.csprojResolveAssemblyReference.cache
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.dll
+C:\Users\LAUTNER\Documents\Visual Studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.pdb

@@ -27,11 +27,11 @@
                 </h1>
 		    </div>
             <div class="per-menu">
-			    <a href="Default.aspx">Home</a> ||
+			    <a href="home.aspx">Home</a> ||
                 <label>Hello , </label>
-                <asp:Label ID="Label1" runat="server" Text="profile_name"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
 		    </div>
-            <asp:Button ID="Button2" runat="server" CssClass="logout" Text="Log Out" Width="88px" />
+            <asp:Button ID="user_logout" runat="server" CssClass="logout" Text="Log Out" Width="88px" OnClick="Button2_Click" />
         </div>
         <div class="rec-main">
             <div class="rec-left" >
@@ -104,7 +104,7 @@
             </div>
 
             <div class="userinfo">
-                <h3>Users Infoo</h3>
+                <h3>&nbsp;</h3>
             </div>
          </div>
            

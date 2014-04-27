@@ -35,11 +35,11 @@
             </div>
             
             <div class="menu">
-			    <a href="Default.aspx">Home</a>| |
+			   
 
 			    <a href="signup_recr.aspx">New recruiter</a> |
 			    <a href="signup_user.aspx">New user</a> |
-                <a href="loginpage.aspx">Login</a>
+                <a href="index.aspx">Login</a>
 		    </div>
         </div>
 
@@ -55,7 +55,7 @@
 	    <div id="foot-menu" style="margin-top: 9px">
 			<a href="">Contact Us</a> |
 			<a href="">Terms</a> |
-			<a href="">&copy;2014 Online Portal</a>
+			<span>&nbsp;&nbsp;&copy;2014 Online Portal</span>
 		</div>
         </div>
 	</div>

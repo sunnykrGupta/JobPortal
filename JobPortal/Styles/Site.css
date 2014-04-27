@@ -33,6 +33,7 @@ p
 {
     margin-bottom: 10px;
     line-height: 1.6em;
+    margin-left: 40px;
 }
 
 
@@ -145,7 +146,6 @@ first child of the left and right table columns */
     margin: 0px;
     padding: 0px 0px 0px 20px;
     color: #f9f9f9;
-    
     font-size: 2em;
     height: 40px;
 }
@@ -166,8 +166,8 @@ first child of the left and right table columns */
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
-	position: fixed;
-	font-size: 100%;
+	font-size: 1.1em;
+    font-weight: 300;
 	padding: 10px;
 	background-color: rgba(25, 23, 31, 0.84);
 	width: 100%;
@@ -175,10 +175,10 @@ first child of the left and right table columns */
 }
 
  .clear
-        {
-            width: 400px;
-            margin-left: 111px;
-        }
+{
+    width: 400px;
+    margin-left: 111px;
+}
 
 
 #foot-menu{
@@ -204,7 +204,7 @@ first child of the left and right table columns */
     font-weight: bold;
     font-size: 1.3em;
     width: 300px;
-    height: 150px;
+    height: 160px;
     left: 25em;
     top: 4em;
     position: absolute;
@@ -212,20 +212,21 @@ first child of the left and right table columns */
     border-radius: 10px;
 }
 
-#Login1_LoginButton {
-    font-size: 1.1em;
-    font-weight: bold;
-    font-style: normal;
-    border-style: solid;
-    border-color: #141214;
-    border-width: 2px;
-    border-radius : 4px;
+.logbut{
+    position: absolute;
+left: 7em;
+top: 8.4em;
+border-radius: 4px;
+border: solid 2px #000;
+font-size: 1.0em;
+font-weight: bold;
 }
 
-#Login1_LoginButton:hover {
-    border-radius : 6px;
+.logbut:hover
+{
+    border: 2px solid #000;color:#000;
+    border-radius: 10px;
 }
-
 
 p.submitButton {
     margin-left: 30em;
@@ -260,7 +261,21 @@ p.submitButton {
     width: 240px;
 }
 
-.catbutton : hover{ border : 2px solid #000;}
+.catbutton {
+    font-size: 1.5em;
+    border : 2px solid #000;
+    border-radius: 4px;
+     
+    
+}
+
+.catbutton:hover{ 
+    border : 2px solid #552899 ;
+    font-size: 1.56em;
+    color: rgba(25, 23, 31, 0.95);
+
+
+}
 
 #def_right
 {   padding: 10px;
@@ -296,7 +311,13 @@ p.submitButton {
     width: 100px;
   }
  
- 
+ .loginstatus{
+     position: absolute;
+    top: 1em;
+    left: 25em;
+    font-size: 1.4em;
+    color: #2D8B7C;
+ }
  
  
 /* -------- User - signup CSS --- */
@@ -309,12 +330,12 @@ p.submitButton {
     font-weight: bold;
     position:absolute;
     top: -50px;
-    left: 10em;
+    left: 7em;
 }
 
 .personal
 {
-    padding: 20px;
+    padding: 16px;
     border : 1px solid #000;
     border-radius: 5px;
     position: absolute;
@@ -324,19 +345,35 @@ p.submitButton {
     width: 900px;
 }
 
-
+.user-notify {
+    font-size:1.5em;
+    position: absolute;
+    color: #1d60ff;
+    top: 0em;
+    right: 8em;
+}
 
 /* -------- recr - signup CSS --- */
 
 .recrsign
 {   border: 1px solid #000;
     border-radius: 8px;
-    line-height: .8em;
+    line-height: .75em;
     font-size: 1.3em;
     position: relative;
     margin-left: 30em;
     width: 700px;
     padding: 5px 0px 0px 40px;
+}
+
+.rec-notify {
+    font-size:1.5em;
+    position: absolute;
+    color: #1d60ff;
+    top: 8em;
+    left: 2em;
+
+
 }
 
 /* ------------- user page CSS ----- */
@@ -442,6 +479,7 @@ p.submitButton {
 .rec-left{ float: left; }
 
 .rec-dash{
+   
    margin: 10px 0px 0px 100px;
    padding: 10px;
 }
@@ -504,14 +542,14 @@ input[type="button"]:hover{
     font-size: 1.5em;
     font-weight: bold;
     border-style: solid;
-    border-color: rgba(25, 23, 31, 0.84);
     border-width: 1px;
-    width: 60%;
-    margin-left: 1em;
+    width: 55%;
+    margin-left: 2em;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 1em;
     padding: 20px;
+    height: 181px;
 }
           
 .createjob 
@@ -535,7 +573,7 @@ input[type="button"]:hover{
 {
     display : block;
     position: absolute;
-    top: 4.4em;
+    top: 1.4em;
     right: 2em;
     font-size: 1.5em;
     font-weight: bold;
@@ -546,13 +584,25 @@ input[type="button"]:hover{
     padding: 10px;
  
  }
- 
-#joburl
-{
+
+#joburl {
     width: 300px;
     height: 50px;
     position: absolute;
     top: 20px;
     right: 144px;
-    
-    }
+}
+
+/*--------------Apply page---------*/
+
+.apply{
+    position: absolute;
+    top: 22em;
+    right: 14em;
+}
+
+.status_apply{
+    position:absolute;
+    top: 2em;
+    right: 8em;
+}
