@@ -144,7 +144,7 @@
             </div>
 
             <div class="rec-right">
-                <p>Success, world-class health, internal fulfillment and sustained happiness
+                <p>world-class health, internal fulfillment and sustained happiness
                 don't just happen. These elements of your best life are created.</p>
                 <p>All too often we look at a human being playing their best game on the
                 playing field of life and assume they got lucky or were born into their
