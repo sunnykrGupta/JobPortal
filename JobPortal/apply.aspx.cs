@@ -29,20 +29,31 @@ namespace JobPortal
 
             string uemail = Session["New"].ToString();
 
-            string user = "select name from userinfo where email ='" + uemail + "'";
-            SqlCommand usql = new SqlCommand(user, jobcon);
-            string username = usql.ExecuteScalar().ToString();
+            string find = "Select count(*) from appliedjob where jobtitle = @tit and usermail = @uemail";
+            SqlCommand findcmd = new SqlCommand(find, jobcon);
+            findcmd.Parameters.AddWithValue("@tit",tit);
+            findcmd.Parameters.AddWithValue("@uemail",uemail);
+            int result = Convert.ToInt32(findcmd.ExecuteScalar().ToString());
 
-            string applyjob = "insert into appliedjob (rec_mail, jobtitle, usermail, name) values (@rmail, @jtit, @umail, @uname)";
-            SqlCommand cmd = new SqlCommand(applyjob, jobcon);
-            cmd.Parameters.AddWithValue("@rmail", recemail);
-            cmd.Parameters.AddWithValue("@jtit", tit);
-            cmd.Parameters.AddWithValue("@umail", uemail);
-            cmd.Parameters.AddWithValue("@uname", username);
+            if (result != 1)
+            {
+                string user = "select name from userinfo where email ='" + uemail + "'";
+                SqlCommand usql = new SqlCommand(user, jobcon);
+                string username = usql.ExecuteScalar().ToString();
 
-            cmd.ExecuteNonQuery();
+                string applyjob = "insert into appliedjob (rec_mail, jobtitle, usermail, name) values (@rmail, @jtit, @umail, @uname)";
+                SqlCommand cmd = new SqlCommand(applyjob, jobcon);
+                cmd.Parameters.AddWithValue("@rmail", recemail);
+                cmd.Parameters.AddWithValue("@jtit", tit);
+                cmd.Parameters.AddWithValue("@umail", uemail);
+                cmd.Parameters.AddWithValue("@uname", username);
 
-            Label1.Text = "Successfully Job Applied";
+                cmd.ExecuteNonQuery();
+
+                Label1.Text = "Successfully Job Applied";
+            }
+            else
+                Label1.Text = "Job Already Applied";
         }
 
        

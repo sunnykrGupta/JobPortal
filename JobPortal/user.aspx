@@ -54,17 +54,17 @@
                         style="width: 655px; height: 52px; font-size: 1.4em;font-weight: bold; padding: 20px 5px 10px 20px;">
                    
                        <label> Name&nbsp;&nbsp;&bull;&nbsp; </label>
-                       <asp:TextBox ID="TextBox1" runat="server" Width="238px"></asp:TextBox>
+                       <asp:TextBox ID="edituname" runat="server" Width="238px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       <label>City&nbsp;&nbsp;&bull;&nbsp;&nbsp;</label><asp:TextBox ID="TextBox2" 
+                       <label>City&nbsp;&nbsp;&bull;&nbsp;&nbsp;</label><asp:TextBox ID="editucity" 
                            runat="server" Width="195px"></asp:TextBox>
                        <br />
                        <br />
                        <label> Mobile&nbsp;&bull; </label>
-                       <asp:TextBox ID="TextBox3" runat="server" MaxLength="10"></asp:TextBox>
+                       <asp:TextBox ID="editumob" runat="server" MaxLength="10" TextMode="Number"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specialization &bull;</label>
-                       <asp:DropDownList ID="DropDownList1" runat="server">
+                       <asp:DropDownList ID="edituspec" runat="server">
                            <asp:ListItem>Civil Engineer</asp:ListItem>
                             <asp:ListItem>Computer Science</asp:ListItem>
                             <asp:ListItem>Electrical Engineer</asp:ListItem>
@@ -88,8 +88,8 @@
                        New Skills&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                        </label>
                        </div>
-                       <asp:TextBox ID="TextBox4" TextMode="Multiline" runat="server" Width="232px" 
-                           Height="63px"></asp:TextBox>
+                       <asp:TextBox ID="edituskill" TextMode="Multiline" runat="server" Width="232px" 
+                           Height="63px" MaxLength="500"></asp:TextBox>
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><br />
                        <br />
                        Update Resume&nbsp;&nbsp; &bull;
@@ -98,13 +98,154 @@
                    
                    </div>
                    <div class="update">
-                       <asp:Button ID="Button1" runat="server" CssClass="update_but" Text="Update Profile" />
+                       <asp:Button ID="edituserprof" runat="server" CssClass="update_but" Text="Update Profile" />
                    </div>
                 </div>
             </div>
 
             <div class="userinfo">
-                <h3>&nbsp;</h3>
+                <asp:ListView ID="ListView1" runat="server" DataKeyNames="email" DataSourceID="SqlDataSource1">
+                    <AlternatingItemTemplate>
+                        <li style="background-color: #FAFAD2;color: #284775; font-size:1.2em;">
+                            <strong>Email: </strong>
+                            <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                            <br />
+                            <strong>Name: </strong>
+                            <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
+                            <br />
+                            <strong>Contact: </strong>
+                            <asp:Label ID="contactLabel" runat="server" Text='<%# Eval("contact") %>' />
+                            <br />
+                            <strong>City: </strong>
+                            <asp:Label ID="cityLabel" runat="server" Text='<%# Eval("city") %>' />
+                            <br />
+                            <strong>Category: </strong>
+                            <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                            <br />
+                            <strong>Special: </strong>
+                            <asp:Label ID="specialLabel" runat="server" Text='<%# Eval("special") %>' />
+                            <br />
+                            <strong>Skill: </strong>
+                            <asp:Label ID="skillLabel" runat="server" Text='<%# Eval("skill") %>' />
+                            <br />
+                        </li>
+                    </AlternatingItemTemplate>
+                    <EditItemTemplate>
+                        <li style="background-color: #FFCC66;color: #000080;font-size:1.2em;">Email:
+                            <asp:Label ID="emailLabel1" runat="server" Text='<%# Eval("email") %>' />
+                            <br />
+                            <strong>Name: </strong>
+                            <asp:TextBox ID="nameTextBox" runat="server" Text='<%# Bind("name") %>' />
+                            <br />
+                            <strong>Contact: </strong>
+                            <asp:TextBox ID="contactTextBox" runat="server" Text='<%# Bind("contact") %>' />
+                            <br />
+                            <strong>City: </strong>
+                            <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
+                            <br />
+                            <strong>Category: </strong>
+                            <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                            <br />
+                            <strong>Special: </strong>
+                            <asp:TextBox ID="specialTextBox" runat="server" Text='<%# Bind("special") %>' />
+                            <br />
+                            <strong>Skill: </strong>
+                            <asp:TextBox ID="skillTextBox" runat="server" Text='<%# Bind("skill") %>' />
+                            <br />
+                            <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
+                        </li>
+                    </EditItemTemplate>
+                    <EmptyDataTemplate>
+                        No data was returned.
+                    </EmptyDataTemplate>
+                    <InsertItemTemplate>
+                        <li style="">Email:
+                            <asp:TextBox ID="emailTextBox" runat="server" Text='<%# Bind("email") %>' />
+                            <br />Name:
+                            <asp:TextBox ID="nameTextBox" runat="server" Text='<%# Bind("name") %>' />
+                            <br />Contact:
+                            <asp:TextBox ID="contactTextBox" runat="server" Text='<%# Bind("contact") %>' />
+                            <br />City:
+                            <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
+                            <br />Category:
+                            <asp:TextBox ID="categoryTextBox" runat="server" Text='<%# Bind("category") %>' />
+                            <br />Special:
+                            <asp:TextBox ID="specialTextBox" runat="server" Text='<%# Bind("special") %>' />
+                            <br />Skill:
+                            <asp:TextBox ID="skillTextBox" runat="server" Text='<%# Bind("skill") %>' />
+                            <br />
+                            <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
+                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
+                        </li>
+                    </InsertItemTemplate>
+                    <ItemSeparatorTemplate>
+<br />
+                    </ItemSeparatorTemplate>
+                    <ItemTemplate>
+                        <li style="background-color: #FFFBD6;color: #333333;font-size:1.2em;">Email:
+                            <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                            <br />
+                            Name:
+                            <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
+                            <br />
+                            Contact:
+                            <asp:Label ID="contactLabel" runat="server" Text='<%# Eval("contact") %>' />
+                            <br />
+                            City:
+                            <asp:Label ID="cityLabel" runat="server" Text='<%# Eval("city") %>' />
+                            <br />
+                            Category:
+                            <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                            <br />
+                            Special:
+                            <asp:Label ID="specialLabel" runat="server" Text='<%# Eval("special") %>' />
+                            <br />
+                            Skill:
+                            <asp:Label ID="skillLabel" runat="server" Text='<%# Eval("skill") %>' />
+                            <br />
+                        </li>
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <ul id="itemPlaceholderContainer" runat="server" style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+                            <li runat="server" id="itemPlaceholder" />
+                        </ul>
+                        <div style="text-align: center;background-color: #FFCC66;font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333;">
+                        </div>
+                    </LayoutTemplate>
+                    <SelectedItemTemplate>
+                        <li style="background-color: #FFCC66;font-weight: bold;color: #000080;font-size:1.4em;">
+                            Email:
+                            <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                            <br />
+                            Name:
+                            <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
+                            <br />
+                            Contact:
+                            <asp:Label ID="contactLabel" runat="server" Text='<%# Eval("contact") %>' />
+                            <br />
+                            City:
+                            <asp:Label ID="cityLabel" runat="server" Text='<%# Eval("city") %>' />
+                            <br />
+                            Category:
+                            <asp:Label ID="categoryLabel" runat="server" Text='<%# Eval("category") %>' />
+                            <br />
+                            Special:
+                            <asp:Label ID="specialLabel" runat="server" Text='<%# Eval("special") %>' />
+                            <br />
+                            Skill:
+                            <asp:Label ID="skillLabel" runat="server" Text='<%# Eval("skill") %>' />
+                            <br />
+                        </li>
+                    </SelectedItemTemplate>
+                </asp:ListView>
+                <h3>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [email], [name], [contact], [city], [category], [special], [skill] FROM [userinfo] WHERE ([email] = @email)">
+                        <SelectParameters>
+                            <asp:SessionParameter Name="email" SessionField="New" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                </h3>
             </div>
          </div>
            
