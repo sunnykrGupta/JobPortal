@@ -1,0 +1,45 @@
+CREATE TABLE [dbo].[userinfo] (
+    [Id]       INT           NULL,
+    [email]    VARCHAR (50)  NOT NULL,
+    [name]     VARCHAR (50)  NOT NULL,
+    [password] VARCHAR (50)  NOT NULL,
+    [contact]  CHAR (10)     NULL,
+    [city]     VARCHAR (50)  NULL,
+    [category] VARCHAR (50)  NOT NULL,
+    [special]  VARCHAR (50)  NOT NULL,
+    [skill]    VARCHAR (200) NULL,
+    [resume]   VARCHAR (50)  NULL,
+    PRIMARY KEY CLUSTERED ([email] ASC)
+);
+
+CREATE TABLE [dbo].[recruiter] (
+    [Id]           INT          NULL,
+    [email]        VARCHAR (50) NOT NULL,
+    [password]     VARCHAR (50) NOT NULL,
+    [organization] CHAR (20)    NULL,
+    [type]         VARCHAR (50) NULL,
+    [address]      VARCHAR (50) NULL,
+    [contact]      CHAR (10)    NULL,
+    PRIMARY KEY CLUSTERED ([email] ASC)
+);
+
+CREATE TABLE [dbo].[jobs] (
+    [rec_mail] VARCHAR (50)   NOT NULL,
+    [title]    VARCHAR (50)   NOT NULL,
+    [web]      VARCHAR (50)   NOT NULL,
+    [category] VARCHAR (50)   NOT NULL,
+    [area]     VARCHAR (50)   NOT NULL,
+    [vacancy]  INT            NOT NULL,
+    [jobdesc]  NVARCHAR (MAX) NOT NULL,
+    [whoapply] NVARCHAR (MAX) NOT NULL
+);
+
+CREATE TABLE [dbo].[appliedjob] (
+    [Id]       UNIQUEIDENTIFIER NOT NULL,
+    [rec_mail] VARCHAR (50)     NOT NULL,
+    [jobtitle] VARCHAR (50)     NOT NULL,
+    [usermail] VARCHAR (50)     NOT NULL,
+    [name]     VARCHAR (50)     NOT NULL,
+    CONSTRAINT [PK_appliedjob] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
