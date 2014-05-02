@@ -15,7 +15,7 @@
     <script type="text/javascript" src="Scripts/jquery-1.4.1-vsdoc.js"></script>
     <script type="text/javascript" src="Scripts/main.js"></script>
 </head>
-<body>
+<body class="bodyindx">
     <form id="form1" runat="server">
     <div class="page">
         <div class="header">
@@ -33,9 +33,7 @@
 
         <div class="rec-main">
            <div class="login">
-                   
-              
-                   
+               
               <label>Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;
 
                <asp:TextBox ID="login_mail" runat="server" Width="136px" Height="23px" AutoPostBack="True" ></asp:TextBox>

@@ -1,12 +1,14 @@
 ﻿/* DEFAULTS
 ----------------------------------------------------------*/
-
+.bodyindx{
+    background-image: url("images/Job.jpg");
+}
 body
 {
     min-width: 900px;
 	font-size: 14px;
 	color: #000;
-	background-color: #fff;
+	background-color: #EBF7CE;
     font-weight: 600;
     margin: 0;
     min-height: 500px;
@@ -14,13 +16,13 @@ body
 
 a:link, a:visited
 {
-    color: #fff;
+    color: #2A7992;
     text-decoration: none;
 }
 
 a:hover
 {
-    color: #1d60ff;
+    color: #0094ff;
     text-decoration: none;
 }
 
@@ -93,7 +95,7 @@ first child of the left and right table columns */
 {
     
     background-color: #fff;
-    
+    height: 91px;
 }
 
 .header
@@ -210,9 +212,11 @@ first child of the left and right table columns */
     position: absolute;
     border: 2px solid #000;
     border-radius: 10px;
+    margin-top: 0px;
 }
 
 .logbut{
+
     position: absolute;
 left: 7em;
 top: 8.4em;
@@ -259,6 +263,7 @@ p.submitButton {
 {
     margin: 25px;
     width: 240px;
+    height: 36px;
 }
 
 .catbutton {
@@ -377,6 +382,26 @@ p.submitButton {
 }
 
 /* ------------- user page CSS ----- */
+
+.updatestatus{
+    position: absolute;
+    top: 2em;
+    right: 14em;
+    color: #2A7992;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jobcreatestat{
+    position: absolute;
+    top: 2em;
+    right: 28em;
+    color: #2A7992;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
 .logout
 {
     border-radius: 4px;
@@ -409,7 +434,7 @@ p.submitButton {
     margin-left: 80px;
     padding: 10px 20px 10px 20px;
     padding: 10px;
-    width: 50%;
+    width: 88%;
     height: auto;
     border: 1px solid #000;
     font-size: 1.4em;
@@ -468,12 +493,24 @@ p.submitButton {
 	color: #fff;
 }
 
+.viewprofile{
+    margin: 4em 4em 0em 4em;
+    line-height: 1.8em;
+    font-size: 1.4em;
+    border-radius: 40px;
+    width: 80%;
+    height: auto;
+    background-color: #FCFCFC;
+    padding: 20px;
+}
 .rec-main
 {
     padding: 10px;
     position: relative;
     margin: 100px 0px 100px;
-    height: auto;
+    height: 75px;
+    top: 10px;
+    left: 0px;
 }
 
 .rec-left{ float: left; }
@@ -543,13 +580,13 @@ input[type="button"]:hover{
     font-weight: bold;
     border-style: solid;
     border-width: 1px;
-    width: 55%;
+    width: 85%;
     margin-left: 2em;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 1em;
     padding: 20px;
-    height: 181px;
+    height: auto;
 }
           
 .createjob 
@@ -561,7 +598,7 @@ input[type="button"]:hover{
     font-weight: normal;
     height: 383px;
     width: 80%;
-    top: 5em;
+    top: 4em;
     padding: 1em;
     border-style: solid;
     border-color: rgba(25, 23, 31, 0.84);
@@ -573,14 +610,15 @@ input[type="button"]:hover{
 {
     display : block;
     position: absolute;
-    top: 1.4em;
-    right: 2em;
+    top: 3.4em;
+    right: 1.6em;
     font-size: 1.5em;
     font-weight: bold;
     line-height: 0.5em;
     border-style: solid;
     border-width: 2px;
-    width: 30%;
+    width: 619px;
+    height: auto;
     padding: 10px;
  
  }

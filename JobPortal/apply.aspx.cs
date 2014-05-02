@@ -35,14 +35,16 @@ namespace JobPortal
             findcmd.Parameters.AddWithValue("@uemail",uemail);
             int result = Convert.ToInt32(findcmd.ExecuteScalar().ToString());
 
-            if (result != 1)
+            if (result < 1)
             {
+                Guid gid = Guid.NewGuid();
                 string user = "select name from userinfo where email ='" + uemail + "'";
                 SqlCommand usql = new SqlCommand(user, jobcon);
                 string username = usql.ExecuteScalar().ToString();
 
-                string applyjob = "insert into appliedjob (rec_mail, jobtitle, usermail, name) values (@rmail, @jtit, @umail, @uname)";
+                string applyjob = "Insert into appliedjob (Id, rec_mail, jobtitle, usermail, name) values (@id, @rmail, @jtit, @umail, @uname)";
                 SqlCommand cmd = new SqlCommand(applyjob, jobcon);
+                cmd.Parameters.AddWithValue("@id", gid);
                 cmd.Parameters.AddWithValue("@rmail", recemail);
                 cmd.Parameters.AddWithValue("@jtit", tit);
                 cmd.Parameters.AddWithValue("@umail", uemail);

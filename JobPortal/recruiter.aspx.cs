@@ -33,24 +33,33 @@ namespace JobPortal
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-           
-            jobcon.Open();
-            string jobcreate = "Insert into jobs (rec_mail, title, web, category, area, vacancy, jobdesc, whoapply) values (@mail, @tit, @web, @cat, @area, @vac, @desc, @who)";
-            SqlCommand comm = new SqlCommand(jobcreate, jobcon);
-            comm.Parameters.AddWithValue("@mail", Label1.Text);
-            comm.Parameters.AddWithValue("@tit", jobtitle.Text);
-            comm.Parameters.AddWithValue("@web", website.Text);
-            comm.Parameters.AddWithValue("@cat", jobcat.SelectedItem.ToString());
-            comm.Parameters.AddWithValue("@area", jobarea.SelectedItem.ToString());
-            comm.Parameters.AddWithValue("@vac", vacancy.Text);
-            comm.Parameters.AddWithValue("@desc", jobdesc.Text);
-            comm.Parameters.AddWithValue("@who", whoapply.Text);
+            try
+            {
 
-            comm.ExecuteNonQuery();
 
-            Label2.Text = "Successfully Job created";
-            
-            jobcon.Close();
+                jobcon.Open();
+                string jobcreate = "Insert into jobs (rec_mail, title, web, category, area, vacancy, jobdesc, whoapply) values (@mail, @tit, @web, @cat, @area, @vac, @desc, @who)";
+                SqlCommand comm = new SqlCommand(jobcreate, jobcon);
+                comm.Parameters.AddWithValue("@mail", Label1.Text);
+                comm.Parameters.AddWithValue("@tit", jobtitle.Text);
+                comm.Parameters.AddWithValue("@web", website.Text);
+                comm.Parameters.AddWithValue("@cat", jobcat.SelectedItem.ToString());
+                comm.Parameters.AddWithValue("@area", jobarea.SelectedItem.ToString());
+                comm.Parameters.AddWithValue("@vac", vacancy.Text);
+                comm.Parameters.AddWithValue("@desc", jobdesc.Text);
+                comm.Parameters.AddWithValue("@who", whoapply.Text);
+
+                comm.ExecuteNonQuery();
+
+                Labelcreatedjob.Text = "Successfully Job created";
+
+                
+            }
+            catch(Exception ex){
+                Response.Write("Job error");
+            }
+
+                jobcon.Close();
         }
     }
 }

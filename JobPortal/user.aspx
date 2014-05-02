@@ -35,19 +35,42 @@
         </div>
         <div class="rec-main">
             <div class="rec-left" >
-                <div class="rec-dash" style="height: 53px; width: 400px;">
+                <div class="rec-dash" style="height: 53px; width: 570px;">
                   <asp:Button ID="Button4" runat="server" Text="Jobs for you" CssClass="jobuser"/>
-                    <input id="edituser" type="button" value="Edit Profile" />
+                    <input id="edituser" type="button" value="Edit Profile" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button5" runat="server" Text="Load Data" Font-Bold="True" Font-Size="Large" Height="35px" OnClick="Button5_Click" Width="127px" />
+                </div>
+                <div class="updatestatus">
+                     <asp:Label ID="Label2" runat="server"></asp:Label>
                 </div>
                 
                 <div id="hotjobs">
-                    <p>When fill method was called, dataadapter will open a connection to database,
-                        executes select command, stores the data retrieved by select command in to
-                        dataset and immediately closes the connection.</p>
-                        <p>As connection to database was closed, any changes to the data in dataset will
-                        not be directly sent to the database and will be made only in the dataset. To
-                        send changes made to data in dataset to the database, Update() method of
-                        the dataadapter is used that has the following syntax. </p>
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Width="396px">
+                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                        <Columns>
+                            <asp:HyperLinkField DataTextField="title" HeaderText="Select" DataNavigateUrlFields="title" DataNavigateUrlFormatString="apply.aspx?title={0}" />
+                            <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
+                            <asp:BoundField DataField="web" HeaderText="web" SortExpression="web" />
+                            <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
+                            <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
+                            <asp:BoundField DataField="vacancy" HeaderText="vacancy" SortExpression="vacancy" />
+                        </Columns>
+                        <EditRowStyle BackColor="#999999" />
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [title], [web], [category], [area], [vacancy] FROM [jobs] WHERE ([area] = @area)">
+                        <SelectParameters>
+                            <asp:SessionParameter Name="area" SessionField="Spec" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                 </div>
                 <div class="editprofile">
                    <div id="editup" 
@@ -98,7 +121,7 @@
                    
                    </div>
                    <div class="update">
-                       <asp:Button ID="edituserprof" runat="server" CssClass="update_but" Text="Update Profile" />
+                       <asp:Button ID="edituserprof" runat="server" CssClass="update_but" Text="Update Profile" OnClick="edituserprof_Click" />
                    </div>
                 </div>
             </div>
@@ -248,6 +271,8 @@
                 </h3>
             </div>
          </div>
+           
+        
            
      </div>
      <div class="footer">

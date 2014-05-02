@@ -26,13 +26,14 @@
             </div>
             <div class="per-menu">
 			    
-                <a href="home.aspx">Home</a>
+                <a href="home.aspx">Home</a> ||
+                <a href="user.aspx">My Page</a>
 		    </div>
         </div>
 
         <div class="rec-main">
             <div class="status_apply">
-                <asp:Label ID="Label1" runat="server" Text="" Font-Size="Large" ForeColor="#009933"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Font-Size="Large" ForeColor="#006666" Font-Bold="True"></asp:Label>
             </div>
             <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyField="title" DataSourceID="SqlDataSource1" GridLines="Both" style="margin-right: 305px" Font-Size="X-Large" Width="1004px">
                 <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />

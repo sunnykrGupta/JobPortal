@@ -44,30 +44,32 @@
 
                     <input id="create_but" type="button" value="Create new Job" />
                 </div>
+                <div class="jobcreatestat">
+                    <asp:Label ID="Labelcreatedjob" runat="server" Font-Bold="True" Font-Size="X-Large" ></asp:Label>
+                </div>
                 <div id="recjob">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" DataKeyNames="title" DataSourceID="SqlDataSource1" Font-Size="Medium" ForeColor="Black" CellSpacing="2" Font-Bold="False">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="title" DataSourceID="SqlDataSource1" Font-Size="Large" ForeColor="#333333" Font-Bold="False" GridLines="None" PageSize="8" Width="470px">
+                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField DataField="title" HeaderText="title" ReadOnly="True" SortExpression="title" />
                             <asp:BoundField DataField="web" HeaderText="web" SortExpression="web" />
                             <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
                             <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
                             <asp:BoundField DataField="vacancy" HeaderText="vacancy" SortExpression="vacancy" />
-                            <asp:BoundField DataField="jobdesc" HeaderText="jobdesc" SortExpression="jobdesc" />
-                            <asp:BoundField DataField="whoapply" HeaderText="whoapply" SortExpression="whoapply" />
                         </Columns>
-                        <FooterStyle BackColor="#CCCCCC" />
-                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <EditRowStyle BackColor="#999999" />
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                         <PagerSettings Position="Top" />
-                        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
-                        <RowStyle BackColor="White" />
-                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                        <SortedAscendingHeaderStyle BackColor="#808080" />
-                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [title], [web], [category], [area], [vacancy], [jobdesc], [whoapply] FROM [jobs] WHERE ([rec_mail] = @rec_mail)">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [title], [web], [category], [area], [vacancy] FROM [jobs] WHERE ([rec_mail] = @rec_mail)">
                         <SelectParameters>
                             <asp:SessionParameter Name="rec_mail" SessionField="New" Type="String" />
                         </SelectParameters>
@@ -111,7 +113,7 @@
                     </asp:DropDownList>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>Vacancies</label>
-                    <asp:TextBox ID="vacancy" runat="server" Width="44px" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="vacancy" runat="server" Width="44px" ></asp:TextBox>
                     <br />
                     <br />
                     
@@ -144,15 +146,32 @@
             </div>
 
             <div class="rec-right">
-                <p>world-class health, internal fulfillment and sustained happiness
-                don't just happen. These elements of your best life are created.</p>
-                <p>All too often we look at a human being playing their best game on the
-                playing field of life and assume they got lucky or were born into their
-                lofty condition.</p>
-                <p>What we don't see is all the devotion and discipline that went into
-                crafting the extraordinary results we see.</p>
+                <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" PageSize="8" Width="612px" Font-Size="Medium" Font-Strikeout="False" Height="104px" style="margin-left: 0px">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                    <Columns>
+                        <asp:HyperLinkField DataTextField="usermail" HeaderText="Select" DataNavigateUrlFields="usermail" DataNavigateUrlFormatString="showuser.aspx?usermail={0}"/>
+                        <asp:BoundField DataField="jobtitle" HeaderText="Job" SortExpression="jobtitle" />
+                        <asp:BoundField DataField="usermail" HeaderText="Usermail" SortExpression="usermail" />
+                        <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
+                    </Columns>
+                    <EditRowStyle BackColor="#999999" />
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [jobtitle], [usermail], [name] FROM [appliedjob] WHERE ([rec_mail] = @rec_mail)">
+                    <SelectParameters>
+                        <asp:SessionParameter Name="rec_mail" SessionField="New" Type="String" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             </div>
-            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#00CC00"></asp:Label>
+            
          </div>
          
      </div>

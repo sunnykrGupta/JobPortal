@@ -34,7 +34,12 @@ namespace JobPortal
                     string pass = passcmd.ExecuteScalar().ToString();
                     if (pass == login_pass.Text)
                     {
+                        string spec = "select special from userinfo where email ='" + login_mail.Text + "'";
+                        SqlCommand scmd = new SqlCommand(spec, jobcon);
+                        string special = scmd.ExecuteScalar().ToString();
+
                         Session["New"] = login_mail.Text;
+                        Session["Spec"] = special;
                         Response.Write("password correct");
                         Response.Redirect("home.aspx");
                     }

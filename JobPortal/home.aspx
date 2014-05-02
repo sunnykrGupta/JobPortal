@@ -33,33 +33,32 @@
         <div class="main">
             
             <div id="def_left">
-                <div class="cat" id="cat_one">
-                    <asp:Button ID="Button1" runat="server" class="catbutton" Height="90px" Text="ENGINEERING" 
-                        Width="200px" />
-                </div>
                 <div class="cat" id="cat_two">
-                    <asp:Button ID="Button2" runat="server" class="catbutton" Height="90px" Text="MANAGEMENT" 
-                        Width="200px" />      
+                    <h2>All Jobs Display</h2>
                 </div>
-                <div class="cat" id="cat_three">
-                    <asp:Button ID="Button3" runat="server" class="catbutton" Height="90px" Text="MEDICAL" 
-                        Width="200px" />
-                </div>
-                <div class="cat" id="cat_four">
-                    <asp:Button ID="Button4" runat="server" class="catbutton" Height="90px" style="margin-top: 0px" 
-                        Text="GOVERNMENT" Width="200px" />
-                </div>
+                
            </div>
            <div id="def_right">
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="title" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="title" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" PageSize="8" Width="725px">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                         <asp:HyperLinkField DataTextField="title" HeaderText="Select" DataNavigateUrlFields="title" DataNavigateUrlFormatString="apply.aspx?title={0}" />
-                        <asp:BoundField DataField="title" HeaderText="title" ReadOnly="True" SortExpression="title" />
-                        <asp:BoundField DataField="web" HeaderText="web" SortExpression="web" />
-                        <asp:BoundField DataField="category" HeaderText="category" SortExpression="category" />
-                        <asp:BoundField DataField="area" HeaderText="area" SortExpression="area" />
-                        <asp:BoundField DataField="vacancy" HeaderText="vacancy" SortExpression="vacancy" />
+                        <asp:BoundField DataField="title" HeaderText="Title" ReadOnly="True" SortExpression="title" />
+                        <asp:BoundField DataField="web" HeaderText="Web" SortExpression="web" />
+                        <asp:BoundField DataField="category" HeaderText="Category" SortExpression="category" />
+                        <asp:BoundField DataField="area" HeaderText="Area" SortExpression="area" />
+                        <asp:BoundField DataField="vacancy" HeaderText="Vacancy" SortExpression="vacancy" />
                     </Columns>
+                    <EditRowStyle BackColor="#999999" />
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JobConnectionString %>" SelectCommand="SELECT [title], [web], [category], [area], [vacancy] FROM [jobs]"></asp:SqlDataSource>
            </div>

@@ -8,5 +8,11 @@ $(document).ready(function () {
         $('.editprofile').css('display', 'inline');
         $('#hotjobs').hide();
     });
+    $(function () {
+           //Hide label after 5 secs
+           setTimeout(function () {
+               $("[id$=Labelcreatedjob]").fadeOut("slow");
+           }, 5000);
+    });
     
 });

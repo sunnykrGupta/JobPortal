@@ -6,6 +6,10 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Net;
+using System.Net.Mail;
+
+
 
 namespace JobPortal
 {
@@ -51,6 +55,31 @@ namespace JobPortal
                 
                 
                 jobcon.Close();
+
+                var fromAddress = new MailAddress("jacobbabc04@gmail.com", "From JobPortal");
+                var toAddress = new MailAddress(rec_email.Text, "To Users");
+                const string fromPassword = "imDAEmon4";
+                const string subject = "Welcome to Jobportal";
+                string body = "Hello," + rec_organ.Text + "! We are glad to have you as our customer. Welcome and get profit from our system. Regard's Job Portal";
+
+                var smtp = new SmtpClient
+                {
+                    Host = "smtp.gmail.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+                };
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body
+                })
+                {
+                    smtp.Send(message);
+                }
+
             }
             catch(Exception ex)
             {
@@ -59,3 +88,4 @@ namespace JobPortal
         }
     }
 }
+       
